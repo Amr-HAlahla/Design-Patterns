@@ -19,7 +19,7 @@ public class EmployeeRecord implements Prototype {
         this.salary = salary;
         this.address = address;
     }
-
+    @Override
     public void showRecords() {
         System.out.println(id + "\t" + name + "\t" + designation + "\t" + salary + "\t" + address);
     }
