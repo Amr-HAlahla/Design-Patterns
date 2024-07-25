@@ -1,23 +1,6 @@
-package proxy;
+package proxy.internet;
 
-interface OfficeInternetAccess {
-    public void grantInternetAccess();
-}
-
-class RealInternetAccess implements OfficeInternetAccess {
-    private String userName;
-
-    public RealInternetAccess(String userName) {
-        this.userName = userName;
-    }
-
-    @Override
-    public void grantInternetAccess() {
-        System.out.println("Internet Access Granted for user " + userName);
-    }
-}
-
-class ProxyInternetAccess implements OfficeInternetAccess {
+public class ProxyInternetAccess implements OfficeInternetAccess {
     private String userName;
     private RealInternetAccess realInternetAccess;
 
@@ -47,12 +30,5 @@ class ProxyInternetAccess implements OfficeInternetAccess {
 
         // Return the sum modulo 10
         return sum % 10;
-    }
-}
-
-public class ProxyInternetExample {
-    public static void main(String[] args) {
-        OfficeInternetAccess access = new ProxyInternetAccess("Amr");
-        access.grantInternetAccess();
     }
 }

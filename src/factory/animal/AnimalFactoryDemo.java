@@ -1,8 +1,8 @@
-package factory;
+package factory.animal;
 
 import java.io.*;
 
-public class testAnimal {
+public class AnimalFactoryDemo {
     public static void main(String[] args) throws IOException {
         animalsFactory animalsFactory = new animalsFactory();
 

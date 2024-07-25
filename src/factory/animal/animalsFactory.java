@@ -1,31 +1,6 @@
-package factory;
+package factory.animal;
 
-interface Animal {
-    void makeSound();
-}
-
-class Dog implements Animal {
-    @Override
-    public void makeSound() {
-        System.out.println("Barking!");
-    }
-}
-
-class Cat implements Animal {
-    @Override
-    public void makeSound() {
-        System.out.println("Meowing!");
-    }
-}
-
-class Donkey implements Animal {
-    @Override
-    public void makeSound() {
-        System.out.println("Braying!");
-    }
-}
-
-class animalsFactory {
+public class animalsFactory {
     // use createAnimal to get the animal object
     public Animal createAnimal(String animalName) {
         if (animalName == null) {
@@ -41,4 +16,3 @@ class animalsFactory {
         return null;
     }
 }
-

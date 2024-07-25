@@ -1,4 +1,4 @@
-package single.ton;
+package singleton;
 
 import java.sql.*;
 
