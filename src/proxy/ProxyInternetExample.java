@@ -52,7 +52,7 @@ class ProxyInternetAccess implements OfficeInternetAccess {
 
 public class ProxyInternetExample {
     public static void main(String[] args) {
-        ProxyInternetAccess access = new ProxyInternetAccess("Amr");
+        OfficeInternetAccess access = new ProxyInternetAccess("Amr");
         access.grantInternetAccess();
     }
 }
