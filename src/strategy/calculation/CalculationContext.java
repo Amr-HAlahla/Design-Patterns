@@ -1,10 +1,14 @@
 package strategy.calculation;
 
 
-public class Context {
+public class CalculationContext {
     private Strategy strategy;
 
-    public Context(Strategy strategy) {
+    public CalculationContext(Strategy strategy) {
+        this.strategy = strategy;
+    }
+
+    public void setCalculationStrategy(Strategy strategy) {
         this.strategy = strategy;
     }
 

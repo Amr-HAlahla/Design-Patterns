@@ -19,17 +19,17 @@ public class StrategyPatternDemo {
         int choice = Integer.parseInt(br.readLine());
         switch (choice) {
             case 1: {
-                Context context = new Context(new Addition());
+                CalculationContext context = new CalculationContext(new Addition());
                 System.out.println(n1 + " + " + n2 + " = " + context.performCalculation(n1, n2));
             }
             break;
             case 2: {
-                Context context = new Context(new Subtraction());
+                CalculationContext context = new CalculationContext(new Subtraction());
                 System.out.println(n1 + " - " + n2 + " = " + context.performCalculation(n1, n2));
             }
             break;
             case 3: {
-                Context context = new Context(new Multiplication());
+                CalculationContext context = new CalculationContext(new Multiplication());
                 System.out.println(n1 + " * " + n2 + " = " + context.performCalculation(n1, n2));
             }
             break;
